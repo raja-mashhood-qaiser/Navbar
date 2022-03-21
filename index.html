@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="Description" content="This navbar">
+    <meta name="Keyword" content="navbar">
+    <meta name="Author" content="mashhood">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .navbar{
+            background-color: blueviolet;
+            color: #fff;
+            padding: 8px;
+        }
+        .navbar ul{
+            display: flex;
+            justify-content: center;
+        }
+        .navbar ul li{
+            list-style-type: none;
+            padding: 15px;
+            background-color: rgb(206, 61, 174);
+            margin-left: 5px;
+
+        }
+        .navbar1{
+            background-color: rgb(206, 61, 174);
+            color: black;
+            padding: 8px;
+        }
+        .navbar1 ul{
+            display: flex;
+            justify-content: center;
+        }
+        .navbar1 ul li{
+            list-style-type: none;
+            padding: 15px;
+            background-color: blueviolet;
+            margin-right: 25%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="navbar1">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="counter">
+        <h1>You click on this this link <span id="count">0</span> times</h1>
+        <a href="https://www.google.com" target="_blank" onclick="clickCount()">Google</a>
+    </div>
+
+    <script>
+        var count = 0;
+
+        function clickCount()
+        {
+            count = count + 1;
+            document.getElementById("count").textContent = count;
+        }
+    </script>
+
+</body>
+</html>
